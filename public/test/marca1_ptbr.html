@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><body>
+<div id="cnh-lp-marca1-root"></div>
+<script src="/embed/cnh-landings.iife.js"></script>
+<script>
+(function () {
+  function m() {
+    if (typeof CNHLandings === "undefined") {
+      console.error("CNHLandings not found");
+      return;
+    }
+    CNHLandings.mount("#cnh-lp-marca1-root", {
+      landing: "marca1",
+      brand: "marca1",
+      language: "pt-BR"
+    });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", m);
+  } else {
+    m();
+  }
+})();
+</script>
+</body></html>
